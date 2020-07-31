@@ -1,7 +1,4 @@
 function clickOnBeeb() {
-  
   var node = document.createElement("BUTTON");
-  node.outerHTML = "<button class="boring-button">Click me!</button>";
+  node.innerHTML = "Click Me";
   document.getElementById("column2").appendChild(node);
-
-}
