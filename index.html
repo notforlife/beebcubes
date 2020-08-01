@@ -4,21 +4,27 @@
 <title>Under Construction</title>
 <style src="otherResolutions.css">
  
+.row {
+ 
+  width: 1920;
+
+ }
+
 .column {
   float: left;
   padding: 10px;
 }
 
 .left {
-  width: 400px;
+  width: 10%;
 }
 
 .right {
-  width: 250px;
+  width: 13%;
 }
  
 .righter {
-   width: 300px;
+   width: 16%;
    background-color: rgb(202,202,202);
  }
  
@@ -31,7 +37,7 @@
   </style>
 </head>
 <body>
-<div class="row">
+<div class="row" id="container">
   <div id="left-column" class="column left">
     <img src="smoler_beebcube.png" alt="beebcubeimg_1" onclick="clickOnBeeb()">
     <h3 id="fake-text">There Doesn't seem to be anything here...</h3>
