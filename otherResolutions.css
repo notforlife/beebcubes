@@ -17,7 +17,7 @@
    background-color: rgb(202,202,202);
  }
 
-.row:after {
+.row1080:after {
   content: "";
   display: table;
   clear: both;
@@ -41,7 +41,7 @@
    background-color: rgb(202,202,202);
  }
 
-.row:after {
+.row720:after {
   content: "";
   display: table;
   clear: both;
