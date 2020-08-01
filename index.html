@@ -3,20 +3,40 @@
 <head>
 <title>Under Construction</title>
 <style>
-  span {
-    width: 100px;
-    height: 1000px;
-    background-color: Gainsboro;
+ 
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 400px;
+}
+
+.right {
+  width: 250px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ span {
+   width: 100px;
+   height: 1000px;
+   background-color: Gainsboro;
    }
   </style>
 </head>
 <body>
-<div>
-  <div id="left-column">
+<div class="row">
+  <div id="left-column" class="column left">
     <img src="smoler_beebcube.png" alt="beebcubeimg_1" onclick="clickOnBeeb()">
     <h1 id="fake-text">There Doesn't seem to be anything here...</h1>
   </div>
-  <div id="column2">
+  <div id="column2" class="column right">
   </div>
 </div>
 </body>
