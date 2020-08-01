@@ -1,8 +1,9 @@
 var beebclicks = 0;
 var currentResolution = 0;
+var buttonCap = 30
 
 function clickOnBeeb() {
-  if (beebclicks < 100) {
+  if (beebclicks < buttonCap) {
   beebclicks ++
   var node = document.createElement("BUTTON");
   node.innerHTML = "Click Me";
@@ -26,9 +27,9 @@ function changeResolution() {
   
  if (currentResolution == 1) {
    
-  document.getElementById("left-column").class = "column left1080";
-  document.getElementById("column2").class = "column right1080";
-  document.getElementById("research-column").class = "column righter1080";
+  document.getElementById("left-column").className = "column left1080";
+  document.getElementById("column2").className = "column right1080";
+  document.getElementById("research-column").className = "column righter1080";
   var notice = document.createElement("P");
   notice.innerHTML = "Updated resolution to 1920x1080";
   document.getElementById("log").appendChild(notice);
@@ -37,9 +38,9 @@ function changeResolution() {
  
  else if (currentResolution == 2) {
    
-  document.getElementById("left-column").class = "column left720";
-  document.getElementById("column2").class = "column right720";
-  document.getElementById("research-column").class = "column righter720";
+  document.getElementById("left-column").className = "column left720";
+  document.getElementById("column2").className = "column right720";
+  document.getElementById("research-column").className = "column righter720";
   var notice = document.createElement("P");
   notice.innerHTML = "Updated resolution to 1280x720";
   document.getElementById("log").appendChild(notice);
@@ -48,9 +49,9 @@ function changeResolution() {
   
  else if (currentResolution == 0) {
    
-  document.getElementById("left-column").class = "column left";
-  document.getElementById("column2").class = "column right";
-  document.getElementById("research-column").class = "column righter";
+  document.getElementById("left-column").className = "column left";
+  document.getElementById("column2").className = "column right";
+  document.getElementById("research-column").className = "column righter";
   var notice = document.createElement("P");
   notice.innerHTML = "Updated resolution to 3840x2160";
   document.getElementById("log").appendChild(notice);
