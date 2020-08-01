@@ -21,15 +21,19 @@ function clickOnBeeb() {
   }
 }
 
-if (beebclicks >= 30) {
-  
-  doneYet = true;
-  document.getElementsByClassName("column3").className = "column3a";
-  var header1 = document.createElement("h3");
-  var header2 = document.createElement("h3");
-  header1.innerHTML = "Research";
-  header2.innerHTML = "Upgrades";
-  document.getElementById("research").appendChild(header1);
-  document.getElementById("upgrades").appendChild(header2);
-  
+function runlock() {
+
+  if (beebclicks >= 30) {
+
+    doneYet = true;
+    document.getElementsByClassName("column3").className = "column3a";
+    var header1 = document.createElement("h3");
+    var header2 = document.createElement("h3");
+    header1.innerHTML = "Research";
+    header2.innerHTML = "Upgrades";
+    document.getElementById("research").appendChild(header1);
+    document.getElementById("upgrades").appendChild(header2);
+
+  }
+
 }
