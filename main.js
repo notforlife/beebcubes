@@ -17,8 +17,18 @@ function clickOnBeeb() {
     log.className = "message";
     log.innerHTML = "You have reached your maximum amount of displayable buttons. Research upgrades to increase this cap!";
     document.getElementById("log").appendChild(log);
-    logMessages.push(log.innerHTML);
-    shiftMessages()
+    if (beebclicks >= 30 && doneYet = false) {
+  
+      doneYet = true;
+      document.getElementsByClassName("column3").className = "column3a";
+      var header1 = document.createElement("h3");
+      var header2 = document.createElement("h3");
+      header1.innerHTML = "Research";
+      header2.innerHTML = "Upgrades";
+      document.getElementById("research").appendChild(header1);
+      document.getElementById("upgrades").appendChild(header2);
+  
+     }
   }
 }
 
