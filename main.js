@@ -29,6 +29,9 @@ function changeResolution() {
   document.getElementById("left-column").class = "column left1080";
   document.getElementById("column2").class = "column right1080";
   document.getElementById("research-column").class = "column righter1080";
+  var notice = document.createElement("P");
+  notice.innerHTML = "Updated resolution to 1920x1080"
+  document.getElementById("log").appendChild(notice)
    
  }
  
@@ -37,6 +40,9 @@ function changeResolution() {
   document.getElementById("left-column").class = "column left720";
   document.getElementById("column2").class = "column right720";
   document.getElementById("research-column").class = "column righter720";
+  var notice = document.createElement("P");
+  notice.innerHTML = "Updated resolution to 1280x720"
+  document.getElementById("log").appendChild(notice)
    
  }
   
@@ -45,6 +51,9 @@ function changeResolution() {
   document.getElementById("left-column").class = "column left";
   document.getElementById("column2").class = "column right";
   document.getElementById("research-column").class = "column righter";
+  var notice = document.createElement("P");
+  notice.innerHTML = "Updated resolution to 3840x2160"
+  document.getElementById("log").appendChild(notice)
    
  }
   
