@@ -1,3 +1,9 @@
+.column1080 {
+  float: left;
+  padding: 10px;
+}
+
+
 .left1080 {
   width: 200px;
 }
@@ -11,6 +17,17 @@
    background-color: rgb(202,202,202);
  }
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column720 {
+  float: left;
+  padding: 10px;
+}
+
 .left720 {
   width: 140px;
 }
@@ -23,6 +40,12 @@
    width: 100px;
    background-color: rgb(202,202,202);
  }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
  
 .img720 {
   width: 180px;
