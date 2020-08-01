@@ -1,0 +1,35 @@
+.left1080 {
+  width: 200px;
+}
+
+.right1080 {
+  width: 125px;
+}
+ 
+.righter1080 {
+   width: 150px;
+   background-color: rgb(202,202,202);
+ }
+
+.left720 {
+  width: 140px;
+}
+
+.right720 {
+  width: 125px;
+}
+ 
+.righter720 {
+   width: 100px;
+   background-color: rgb(202,202,202);
+ }
+ 
+.img720 {
+  width: 180px;
+  height: 180px;
+ }
+
+.img1080 {
+ width: 270px;
+ height: 270px;
+}
