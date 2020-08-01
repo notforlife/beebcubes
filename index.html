@@ -21,7 +21,7 @@
    width: 300px;
    background-color: rgb(202,202,202);
  }
-
+ 
 .row:after {
   content: "";
   display: table;
@@ -34,12 +34,16 @@
 <div class="row">
   <div id="left-column" class="column left">
     <img src="smoler_beebcube.png" alt="beebcubeimg_1" onclick="clickOnBeeb()">
-    <h1 id="fake-text">There Doesn't seem to be anything here...</h1>
+    <h3 id="fake-text">There Doesn't seem to be anything here...</h3>
+    <div id="log">
+    </div>
+    <div id="options">
+     <button>Change resolution</button>
+    </div>
   </div>
   <div id="column2" class="column right">
   </div>
-  <div class="column righter">
-   
+  <div id="research-column" class="column righter">
   </div>
 </div>
 </body>
