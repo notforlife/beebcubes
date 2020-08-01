@@ -4,6 +4,10 @@ img {
    width: 17%;
    
   }
+
+* {
+  box-sizing: border-box;
+}
    
 .column {
   float: left;
