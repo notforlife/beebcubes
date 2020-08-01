@@ -42,3 +42,5 @@ function shiftMessages() {
   logMessages.forEach(pushMessages);
   
 }
+
+shiftMessages()
