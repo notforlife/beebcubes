@@ -1,4 +1,5 @@
-var beebclicks = 0
+var beebclicks = 0;
+var currentResolution = 0;
 
 function clickOnBeeb() {
   if (beebclicks < 100) {
@@ -10,6 +11,41 @@ function clickOnBeeb() {
   else {
     var log = document.createElement("P");
     log.innerHTML = "You have reached your maximum amount of displayable buttons. Research upgrades to increase this cap!"
-    document.getElementById("left-column").appendChild(log);
+    document.getElementById("log").appendChild(log);
   }
+}
+
+function changeResolution() {
+  
+ currentResolution ++
+ if (currentResolution > 2) {
+  
+   currentResolution = 0;
+   
+ }
+  
+ if (currentResolution == 1) {
+   
+  document.getElementById("left-column").class = "column left1080";
+  document.getElementById("column2").class = "column right1080";
+  document.getElementById("research-column").class = "column righter1080";
+   
+ }
+ 
+ if (currentResolution == 2) {
+   
+  document.getElementById("left-column").class = "column left720";
+  document.getElementById("column2").class = "column right720";
+  document.getElementById("research-column").class = "column righter720";
+   
+ }
+  
+ else {
+   
+  document.getElementById("left-column").class = "column left";
+  document.getElementById("column2").class = "column right";
+  document.getElementById("research-column").class = "column righter";
+   
+ }
+  
 }
