@@ -26,21 +26,17 @@ function changeResolution() {
  }
   
  if (currentResolution == 1) {
-   
-  document.getElementById("left-column").className = "column1080 left1080";
-  document.getElementById("column2").className = "column1080 right1080";
-  document.getElementById("research-column").className = "column righter1080";
+  
+  document.getElementById("container").style.width = "1920";
   var notice = document.createElement("P");
-  notice.innerHTML = "Updated resolution to 1920x1080";
+  notice.innerHTML = "Updated resolution to 1280x720";
   document.getElementById("log").appendChild(notice);
    
  }
  
  else if (currentResolution == 2) {
    
-  document.getElementById("left-column").className = "column720 left720";
-  document.getElementById("column2").className = "column720 right720";
-  document.getElementById("research-column").className = "column720 righter720";
+  document.getElementById("container").style.width = "1280";
   var notice = document.createElement("P");
   notice.innerHTML = "Updated resolution to 1280x720";
   document.getElementById("log").appendChild(notice);
@@ -48,10 +44,8 @@ function changeResolution() {
  }
   
  else if (currentResolution == 0) {
-   
-  document.getElementById("left-column").className = "column left";
-  document.getElementById("column2").className = "column right";
-  document.getElementById("research-column").className = "column righter";
+
+  document.getElementById("container").style.width = "3840";
   var notice = document.createElement("P");
   notice.innerHTML = "Updated resolution to 3840x2160";
   document.getElementById("log").appendChild(notice);
