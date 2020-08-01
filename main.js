@@ -10,5 +10,6 @@ function clickOnBeeb() {
   else {
     var log = document.createElement("P");
     log.innerHTML = "You have reached your maximum amount of displayable buttons. Research upgrades to increase this cap!"
+    document.getElementById("left-column").appendChild(log);
   }
 }
