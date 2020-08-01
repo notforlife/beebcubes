@@ -35,7 +35,7 @@ function changeResolution() {
    
  }
  
- if (currentResolution == 2) {
+ else if (currentResolution == 2) {
    
   document.getElementById("left-column").class = "column left720";
   document.getElementById("column2").class = "column right720";
@@ -46,7 +46,7 @@ function changeResolution() {
    
  }
   
- else {
+ else if (currentResolution == 0) {
    
   document.getElementById("left-column").class = "column left";
   document.getElementById("column2").class = "column right";
