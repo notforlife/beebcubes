@@ -4,29 +4,6 @@ var buttonCap = 30;
 var logMessages = [];
 var n;
 
-function pushMessages(value) {
-  
-  var mlog = document.createElement("P");
-  mlog.className = "message"
-  mlog.innerHTML = value
-  document.getElementById("log").appendChild(mlog);
-  
-}
-
-function shiftMessages() {
-  
-  document.getElementsByClassName("message").remove();
-  
-  if (logMessages.length > 6) {
-  
-    logMessages.shift();
-    
-  }
-  
-  logMessages.forEach(pushMessages);
-  
-}
-
 function clickOnBeeb() {
   if (beebclicks < buttonCap) {
   beebclicks ++
