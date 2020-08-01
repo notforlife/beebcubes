@@ -3,6 +3,7 @@ var currentResolution = 0;
 var buttonCap = 30;
 var logMessages = [];
 var n;
+var doneYet = false;
 
 function clickOnBeeb() {
   if (beebclicks < buttonCap) {
@@ -19,4 +20,17 @@ function clickOnBeeb() {
     logMessages.push(log.innerHTML);
     shiftMessages()
   }
+}
+
+if (beebclicks >= 30 && doneYet == false) {
+  
+  doneYet = true;
+  document.getElementsByClassName("column3").className = "column3a";
+  var header1 = document.createElement("h3");
+  var header2 = document.createElement("h3");
+  header1.innerHTML = "Research";
+  header2.innerHTML = "Upgrades";
+  document.getElementById("research").appendChild(header1)
+  document.getElementById("upgrades").appendChild(header2)
+  
 }
