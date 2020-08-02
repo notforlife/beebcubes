@@ -6,6 +6,7 @@ var n;
 var doneYet = false;
 var energy = 0;
 var power = 0;
+var efficiency = 0.16
 
 function clickOnBeeb() {
   if (beebclicks < buttonCap) {
@@ -28,14 +29,11 @@ function runlock() {
 
   if (beebclicks >= 30) {
 
-    doneYet = true;
-    document.getElementsByClassName("column3").className = "column3a";
-    var header1 = document.createElement("h4");
-    var header2 = document.createElement("h4");
-    header1.innerHTML = "Research";
-    header2.innerHTML = "Upgrades";
-    document.getElementById("research").appendChild(header1);
-    document.getElementById("upgrades").appendChild(header2);
+    document.getElementsByClassName("column3").style.background-color = "rgb(202,202,202)";
+    document.getElementById("research").style.height = "30%"
+    document.getElementById("upgrades").style.height = "65%"
+    document.getElementById("research-header").innerHTML = "Research"
+    document.getElementByID("upgrades-header").innerHTML = "Upgrades"
 
   }
 
@@ -43,9 +41,9 @@ function runlock() {
 
 function convertClicks() {
   
-  energy += (power / 7).toFixed(2)
-  power = 0
-  document.getElementsByClassName("button1").remove()
+  energy += (power * efficiency).toFixed(2);
+  power = 0;
+  document.getElementsByClassName("button1").remove();
   
 }
 
@@ -57,7 +55,7 @@ function updateGUI() {
     document.getElementById("energyAmount").innerHTML = "Energy: " + energy;
   
   } 
-  
-  
-  
+    
 }
+
+updateGUI();
