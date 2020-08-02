@@ -4,11 +4,14 @@ var buttonCap = 30;
 var logMessages = [];
 var n;
 var doneYet = false;
+var energy = 0;
+var power = 0;
 
 function clickOnBeeb() {
   if (beebclicks < buttonCap) {
-  beebclicks ++
+  power ++
   var node = document.createElement("BUTTON");
+  node.className = "button1"
   node.innerHTML = "Click Me";
   document.getElementById("column2").appendChild(node);
   }
@@ -27,8 +30,8 @@ function runlock() {
 
     doneYet = true;
     document.getElementsByClassName("column3").className = "column3a";
-    var header1 = document.createElement("h3");
-    var header2 = document.createElement("h3");
+    var header1 = document.createElement("h4");
+    var header2 = document.createElement("h4");
     header1.innerHTML = "Research";
     header2.innerHTML = "Upgrades";
     document.getElementById("research").appendChild(header1);
@@ -36,4 +39,25 @@ function runlock() {
 
   }
 
+}
+
+function convertClicks() {
+  
+  energy += (power / 7).toFixed(2)
+  power = 0
+  document.getElementsByClassName("button1").remove()
+  
+}
+
+function updateGUI() {
+  
+  if (beebclicks >= 5) {
+      
+    document.getElementById("beebclicksAmount").innerHTML = "Beebclicks: " + power;
+    document.getElementById("energyAmount").innerHTML = "Energy: " + energy;
+  
+  } 
+  
+  
+  
 }
