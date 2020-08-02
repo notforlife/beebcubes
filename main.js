@@ -3,7 +3,6 @@ var currentResolution = 0;
 var buttonCap = 31;
 var logMessages = [];
 var n;
-var doneYet = false;
 var energy = 0;
 var power = 0;
 var efficiency = 0.16
