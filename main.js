@@ -1,6 +1,6 @@
 var beebclicks = 0;
 var currentResolution = 0;
-var buttonCap = 30;
+var buttonCap = 31;
 var logMessages = [];
 var n;
 var doneYet = false;
