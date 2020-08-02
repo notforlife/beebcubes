@@ -29,7 +29,7 @@ function runlock() {
 
   if (beebclicks >= 30) {
 
-    document.getElementsByClassName("column3").style.color = "rgb(202,202,202)";
+    document.getElementById("research-column").style.color = "rgb(202,202,202)";
     document.getElementById("research").style.height = "30%"
     document.getElementById("upgrades").style.height = "65%"
     document.getElementById("research-header").innerHTML = "Research"
