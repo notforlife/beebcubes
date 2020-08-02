@@ -20,9 +20,9 @@ function clickOnBeeb() {
     log.className = "message";
     log.innerHTML = "You have reached your maximum amount of displayable buttons. Research upgrades to increase this cap!";
     document.getElementById("log").appendChild(log);
-    }
   }
 }
+
 
 function runlock() {
 
