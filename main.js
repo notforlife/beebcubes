@@ -14,6 +14,7 @@ function clickOnBeeb() {
     power ++
     var node = document.createElement("BUTTON");
     node.className = "button1"
+    node.onclick = "runlock()"
     node.innerHTML = "Click Me";
     document.getElementById("column2").appendChild(node);
   } else {
