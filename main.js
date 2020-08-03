@@ -33,7 +33,7 @@ function runlock() {
     document.getElementById("research").style.height = "30%"
     document.getElementById("upgrades").style.height = "65%"
     document.getElementById("research-header").innerHTML = "Research"
-    document.getElementByID("upgrades-header").innerHTML = "Upgrades"
+    document.getElementById("upgrades-header").innerHTML = "Upgrades"
 
   }
 
