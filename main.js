@@ -52,11 +52,17 @@ function updateGUI() {
   
   if (beebclicks >= 5) {
       
-    document.getElementById("beebclicksAmount").innerHTML = "Beebclicks: " + power;
-    document.getElementById("energyAmount").innerHTML = "Energy: " + energy;
+    document.getElementById("beebclicksAmount").textContent = "Beebclicks: " + power;
+    document.getElementById("energyAmount").textContent = "Energy: " + energy;
   
   } 
     
 }
 
-updateGUI();
+function loop() {
+  
+  updateGUI();
+  
+}
+
+setInterval(loop, 10);
