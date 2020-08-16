@@ -9,7 +9,7 @@ var efficiency = 0.16
 
 function clickOnBeeb() {
   beebclicks ++
-  if (beebclicks < buttonCap) {
+  if (power < buttonCap) {
     power ++
     var node = document.createElement("BUTTON");
     node.className = "button1"
@@ -54,7 +54,10 @@ function updateGUI() {
       
     document.getElementById("beebclicksAmount").textContent = "Beebclicks: " + power;
     document.getElementById("energyAmount").textContent = "Energy: " + energy;
-  
+    energybutton = document.createElement("BUTTON");
+    energybutton.onclick = "convertClicks()";
+    energybutton.value = "Convert Beebclicks";
+    document.getElementById("information-viewer").append(energybutton);
   } 
     
 }
