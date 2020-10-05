@@ -48,16 +48,22 @@ function convertClicks() {
   
 }
 
+if (beebclicks >= 5) {
+  
+    energybutton = document.createElement("BUTTON");
+    energybutton.onclick = "convertClicks()";
+    energybutton.value = "Convert Beebclicks";
+    document.getElementById("information-viewer").append(energybutton); 
+  
+}
+
 function updateGUI() {
   
   if (beebclicks >= 5) {
       
     document.getElementById("beebclicksAmount").textContent = "Beebclicks: " + power;
     document.getElementById("energyAmount").textContent = "Energy: " + energy;
-    energybutton = document.createElement("BUTTON");
-    energybutton.onclick = "convertClicks()";
-    energybutton.value = "Convert Beebclicks";
-    document.getElementById("information-viewer").append(energybutton);
+    
   } 
     
 }
