@@ -53,7 +53,7 @@ if (beebclicks >= 5) {
     var energybutton = document.createElement("BUTTON");
     energybutton.onclick = "convertClicks()";
     energybutton.value = "Convert Beebclicks";
-    document.getElementById("information-viewer").append(energybutton); 
+    document.getElementById("information-viewer").appendChild(energybutton); 
   
 }
 
